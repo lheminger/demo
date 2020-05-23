@@ -2,6 +2,8 @@ import json
 import os
 import sys
 
+#This code adds the Lib path needed to resolve the boto3 dependency
+#Lib folder will be uploaded from an S3 bucket to Lambda
 print("Loading Lambda function")
 CWD = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, os.path.join(CWD, "lib"))
@@ -12,12 +14,14 @@ import boto3
 def lambda_handler(event, context):
     s = json.dumps(event)
     print("Event passed to my handler: " + s)
+
+    #Check to ensure the body was sent from the client. Will skip all processing, if no body
     if s.find("body") > 0:
+        #parse out the items from the body tag
         body = event['body']
         print("Body = " + body)
         jbody = json.loads(body)
         print(jbody)
-
         name = jbody['Name']
         email = jbody['Email']
         msg = jbody['Msg']
