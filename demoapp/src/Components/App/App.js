@@ -73,8 +73,8 @@ class App extends Component {
       var params = {'Name': this.state.myName, 'Email': this.state.myEmail, 'Msg': this.state.myMsg};
 
         // Make my network call here
-        //  axios.post('https://wwww.ecoatm.com', {params})
-        axios.get('https://app.memcpu.io/api/health')
+          axios.post('https://2mmad1s0uh.execute-api.us-west-2.amazonaws.com/Demo/demo', params)
+        //axios.get('https://app.memcpu.io/api/health')
          .then(res => {
            console.log(res);
            console.log(res.data);
