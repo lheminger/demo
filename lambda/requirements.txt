@@ -1,5 +1,6 @@
-flask
-zappa
-PyPI
-awsgi
+boto3
+os
+json
+sys
+
 
