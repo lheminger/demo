@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Text} from 'react';
 import logo from './../../logo.svg';
 import './App.css';
 import Container from '@material-ui/core/Container';
@@ -7,11 +7,12 @@ import { Button, Input, Paper, TextField, TextareaAutosize} from '@material-ui/c
 import { render } from 'react-dom';
 import axios from 'axios';
 
+var currentStatus = "   Network Status: Waiting for response";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {myName: "", myEmail: "", myMsg: ""};
+    this.state = {myName: "", myEmail: "", myMsg: "", myStatus: "   Network Status: Waiting for Response"};
   }
 
 
@@ -30,10 +31,15 @@ class App extends Component {
     console.log("Msg = " + this.state.myMsg);
   }
 
+  statusChange = (event) => {
+    this.setState({myStatus: this.currentStatus});
+   }
+
   doClear() {
     this.setState({myEmail: ''});
     this.setState({myName: ''});
     this.setState({myMsg: ''}); 
+    this.statusChange();
   }
 
    handleClear = (event) => {
@@ -78,6 +84,12 @@ class App extends Component {
          .then(res => {
            console.log(res);
            console.log(res.data);
+           this.currentStatus = "   Network Status: Email successfully sent!";
+           this.statusChange();
+           } 
+         ).catch( error => {
+           this.currentStatus = "   Network Status: Email Failed to Send!";
+           this.statusChange();
          })
 
         // clear for next time
@@ -143,6 +155,13 @@ class App extends Component {
             <Button variant="contained" color="secondary" onClick={this.handleClear}>
             Clear
             </Button>
+            <TextField
+                 name="status" 
+                 fullWidth={true}
+                 InputProps={{ disableUnderline: true }}
+                 OnChange = {this.statusChange}
+                 value={this.state.myStatus}>
+            </TextField>
           </form>
         </Paper>
       </Container>
