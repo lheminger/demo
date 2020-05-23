@@ -30,8 +30,8 @@ def lambda_handler(event, context):
         # send email
         client = boto3.client('ses',
                               region_name='us-west-2',
-                              aws_access_key_id='AKIAVEF35TYJMOUNK7IM',
-                              aws_secret_access_key='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')
+                              aws_access_key_id='AKIAVEF35TYJOSIRIGVF',
+                              aws_secret_access_key='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')
 
         print("Boto3 client created")
         response = client.send_email(
@@ -58,8 +58,8 @@ def lambda_handler(event, context):
         print("Creating DynamoDB client")
         dbclient = boto3.client('dynamodb',
                                 region_name='us-west-2',
-                                aws_access_key_id='AKIAVEF35TYJMOUNK7IM',
-                                aws_secret_access_key='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')
+                                aws_access_key_id='AKIAVEF35TYJOSIRIGVF',
+                                aws_secret_access_key='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')
 
         print("Inserting to DynamoDB")
         dbclient.put_item(TableName='Messages',

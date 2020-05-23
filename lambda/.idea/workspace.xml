@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e180103c-02ab-4488-a197-f3615c8f50fc" name="Default Changelist" comment="" />
+    <list default="true" id="e180103c-02ab-4488-a197-f3615c8f50fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lambda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lambda.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +23,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -60,28 +64,63 @@
       <option name="presentableId" value="Default" />
       <updated>1590183901279</updated>
     </task>
+    <task id="LOCAL-00001" summary="Working Python Lambda function">
+      <created>1590223729148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590223729148</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Working Python Lambda function">
+      <created>1590223892387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590223892387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working Python Lambda function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Python Lambda function" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1656" height="378" key="GridCell.Tab.0.bottom" timestamp="1590188598400">
+    <state x="1819" y="925" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590195440704">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state width="1656" height="378" key="GridCell.Tab.0.bottom/0.0.3840.2120@0.0.3840.2120" timestamp="1590188598400" />
-    <state width="1656" height="378" key="GridCell.Tab.0.center" timestamp="1590188598400">
+    <state x="1819" y="925" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.2120@0.0.3840.2120" timestamp="1590195440704" />
+    <state x="870" y="708" key="CommitChangelistDialog2" timestamp="1590223891696">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state width="1656" height="378" key="GridCell.Tab.0.center/0.0.3840.2120@0.0.3840.2120" timestamp="1590188598400" />
-    <state width="1656" height="378" key="GridCell.Tab.0.left" timestamp="1590188598399">
+    <state x="870" y="708" key="CommitChangelistDialog2/0.0.3840.2120@0.0.3840.2120" timestamp="1590223891696" />
+    <state x="1114" y="1027" key="FileChooserDialogImpl" timestamp="1590206422225">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state width="1656" height="378" key="GridCell.Tab.0.left/0.0.3840.2120@0.0.3840.2120" timestamp="1590188598399" />
-    <state width="1656" height="378" key="GridCell.Tab.0.right" timestamp="1590188598400">
+    <state x="1114" y="1027" key="FileChooserDialogImpl/0.0.3840.2120@0.0.3840.2120" timestamp="1590206422225" />
+    <state width="1656" height="378" key="GridCell.Tab.0.bottom" timestamp="1590225195855">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state width="1656" height="378" key="GridCell.Tab.0.right/0.0.3840.2120@0.0.3840.2120" timestamp="1590188598400" />
-    <state x="1727" y="830" key="SettingsEditor" timestamp="1590183999240">
+    <state width="1656" height="378" key="GridCell.Tab.0.bottom/0.0.3840.2120@0.0.3840.2120" timestamp="1590225195855" />
+    <state width="1656" height="378" key="GridCell.Tab.0.center" timestamp="1590225195855">
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
-    <state x="1727" y="830" key="SettingsEditor/0.0.3840.2120@0.0.3840.2120" timestamp="1590183999240" />
+    <state width="1656" height="378" key="GridCell.Tab.0.center/0.0.3840.2120@0.0.3840.2120" timestamp="1590225195855" />
+    <state width="1656" height="378" key="GridCell.Tab.0.left" timestamp="1590225195855">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1656" height="378" key="GridCell.Tab.0.left/0.0.3840.2120@0.0.3840.2120" timestamp="1590225195855" />
+    <state width="1656" height="378" key="GridCell.Tab.0.right" timestamp="1590225195855">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="1656" height="378" key="GridCell.Tab.0.right/0.0.3840.2120@0.0.3840.2120" timestamp="1590225195855" />
+    <state x="835" y="928" key="SettingsEditor" timestamp="1590206425460">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="835" y="928" key="SettingsEditor/0.0.3840.2120@0.0.3840.2120" timestamp="1590206425460" />
+    <state x="808" y="846" key="Vcs.Push.Dialog.v2" timestamp="1590223924304">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="808" y="846" key="Vcs.Push.Dialog.v2/0.0.3840.2120@0.0.3840.2120" timestamp="1590223924304" />
   </component>
 </project>
