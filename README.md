@@ -19,11 +19,11 @@ The backend for the site is implemented using an AWS Lambda function developed i
 The Lambda function was developed using the community edition of PyCharm, and tested locally using a local Python interpter.  The main function is located in the repo here:  **lambda/app.py**.   
 
 To deploy the function:
-    Zip the contents of the lambda folder to lambda.zip.  NOTE: This must include the venv folder, which contains the required dependencies.  We do not have control of the Python enviroment when using AWS Lambda, so all dependencies must be self contained.
+First, Zip the contents of the lambda folder to lambda.zip.  NOTE: This must include the venv folder, which contains the required dependencies.  We do not have control of the Python enviroment when using AWS Lambda, so all dependencies must be self contained.
 
-    Upload the .zip file to an S3 bucket called  "heminger-lamba".  Overwrite the .zip file that's already there. Select the lambda.zip file on the bucket file list page, and copy its URL.
+Second, Upload the .zip file to an S3 bucket called  "heminger-lamba".  Overwrite the .zip file that's already there. Select the lambda.zip file on the bucket file list page, and copy its URL.
 
-    On the Lambda console, navigate to the "DemoProcessor" function, select "Upload a file from Amazon S3" as the code entry type, and paste the URL to the .zip file.  Click the Save button at the top.  Also click the Test button, and make sure it was successful.  This means the deployment was successful.  
+Lastly, On the Lambda console, navigate to the "DemoProcessor" function, select "Upload a file from Amazon S3" as the code entry type, and paste the URL to the .zip file.  Click the Save button at the top.  Also click the Test button, and make sure it was successful.  This means the deployment was successful.  
 
 # AWS Infrastructure
 The frontend and backend portions of this project highly depend on the AWS infrastructure that was established for the project.  This includes the two S3 buckets, AWS Lambda function called "DemoProcessor", API Gateway API called "DemoApi", DynamoDB tablename "Messages", SES, and IAM user.   Note: the IAM user credentials in this repo are not the correct ones.
